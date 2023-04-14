@@ -1,1 +1,0 @@
-# Diabestes-Prediction-Streamlit-App
