@@ -64,7 +64,7 @@ def predict():
 
 
 def main():
-    new_title = '<p style="font-size: 42px;">Welcome The Object Detection App!</p>'
+    new_title = '<p style="font-size: 42px;">Welcome The Diabetes Prediction App!</p>'
     read_me_0 = st.markdown(new_title, unsafe_allow_html=True)
     read_me = st.markdown("""
     The application is built using Streamlit  
