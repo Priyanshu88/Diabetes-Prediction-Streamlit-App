@@ -4,9 +4,7 @@
   <h1>Diabetes Prediction Streamlit App</h1>
 
   <p>
-This project uses machine learning algorithms to predict the likelihood of a patient having diabetes based on certain diagnostic criteria. The dataset used in this project contains information about various diagnostic measurements for patients, such as glucose, blood pressure, insulin level, etc.
-
-The aim of this project is to build and compare the performance of different machine learning models - K-Nearest Neighbors, Logistic Regression, Decision Tree, Random Forest, Support Vector Machine - to accurately predict the presence of diabetes in patients.
+The Diabetes Prediction App is a tool that predicts the probability of a patient having diabetes based on diagnostic measurements. This tool is intended for females above the age of 21 years, of Pima Indian heritage, and uses a dataset from the National Institute of Diabetes and Digestive and Kidney Diseases.
   </p>
   
 
@@ -42,8 +40,9 @@ The aim of this project is to build and compare the performance of different mac
 - [Dependencies](#toolbox-dependecies)
 - [Installation](#gear-installation)
 - [Usage](#play_or_pause_button-usage)
-- [Results](#rocket-results)
-- [Conclusion](#construction-conclusion)
+- [Inputs](#rocket-inputs)
+- [Outputs](#construction-outputs)
+- [Run](#running-run)
 - [Deployment](#triangular_flag_on_post-deployment)
 - [License](#balance_scale-license)
 - [Contact](#handshake-contact)
@@ -52,7 +51,7 @@ The aim of this project is to build and compare the performance of different mac
 
 ## :signal_strength: Dataset
 
-The dataset used in this project is the Pima Indians Diabetes Dataset, which can be found here. The dataset consists of 768 samples with 8 features, including the target variable, indicating the presence of diabetes. The dataset can be found on [`Kaggle`](https://www.kaggle.com/datasets/mathchi/diabetes-data-set). It includes following health criteria:
+The trained dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective is to predict based on diagnostic measurements whether a patient has diabetes. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage. The dataset can be found on [`Kaggle`](https://www.kaggle.com/datasets/mathchi/diabetes-data-set). It includes following health criteria:
 
 - Pregnancies: Number of times pregnant
 - Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test
@@ -133,7 +132,7 @@ In this project, we compared the accuracy of five different machine learning mod
 
 ## :triangular_flag_on_post: Notebook
 
-Checkout the deployment repository [`here`](https://github.com/Priyanshu88/Diabestes-Prediction-Streamlit-App).
+Checkout the notebook repository [`here`](https://github.com/Priyanshu88/Diabestes-Prediction-Streamlit-App).
 
 
 
