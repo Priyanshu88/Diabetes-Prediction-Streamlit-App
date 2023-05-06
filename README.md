@@ -42,8 +42,7 @@ The Diabetes Prediction App is a tool that predicts the probability of a patient
 - [Usage](#play_or_pause_button-usage)
 - [Inputs](#rocket-inputs)
 - [Outputs](#construction-outputs)
-- [Run](#running-run)
-- [Deployment](#triangular_flag_on_post-deployment)
+- [Deployment and Notebook](#triangular_flag_on_post-deployment-and-notebook)
 - [License](#balance_scale-license)
 - [Contact](#handshake-contact)
 
@@ -73,19 +72,21 @@ The trained dataset is originally from the National Institute of Diabetes and Di
 
 ## :toolbox: Dependecies
 
-`python 3.8.3`
+`streamlit`
 
-`pandas`
+`pickle4`
 
-`numpy`
+`numpy==1.20.2`
 
-`sklearn`
+`seaborn==0.11.1`
 
-`matplotlib`
+`scikit-learn>=0.18`
 
-`seaborn`
+`matplotlib==3.4.1`
 
-`pickle`
+`pandas==1.2.4`
+
+`plotly>=5.0.0`
 
 
 
@@ -98,41 +99,52 @@ git clone https://github.com/Priyanshu88/Diabetes-Prediction-Streamlit-App.git
 ```
 
 ```bash
-cd Diabetes-Prediction
+cd Diabetes-Prediction-Streamlit-App
 ```
 
+```bash
+pip install -r requirements.txt
+```
 
+```bash
+streamlit run app.py
+```
 
 ## :play_or_pause_button: Usage
 
-The Jupyter notebook Diabetes Prediction.ipynb contains the code for loading and preprocessing the dataset, as well as implementing and evaluating the KNN, Logistic Regression, Random Forest, Support Vector Machine and Decision Tree models. To run the notebook, simply open it in Jupyter and run each cell in order.
-<br/>
-## :rocket: Results
-
-<div align='center'>
-
-| Model                                             | Accuracy |
-|---------------------------------------------------|----------|
-| K-Nearest Neighbour                               | 79.22%    |
-| Logistic Regression                               | 81.82%    |
-| Random Forest                                     | 79.22%    |
-| Support Vector Machine                            | 83.12%    |
-| Decision Tree                                     | 81.82%    |
-| Hypertuning - GridSearchCV on Logistic Regression | 83.12%    |
-
-</div>
+1. Open the app in your web browser.
+2. Enter the required information in the input fields.
+3. Click the 'Predict' button to generate the prediction.
 
 
 
-## :construction: Conclusion
+## :construction: Inputs
+Click on the link and reboot the tool or run locally and enter your:
 
-In this project, we compared the accuracy of five different machine learning models as well as hypertuning parameters for predicting diabetes based on various health criteria. We found that Support Vector Machine was the most accurate model, with an accuracy of 83.12%. The above results also tells that Logistic Regression and Decision Tree are also performing good and hypertuing on Logistic Regression increases its accuracy around 2%. This project could be further improved by testing additional models and/or including additional health criteria in the dataset.
+* Name: Name of the patient
+* Pregnancies: Number of times pregnant
+* Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+* Blood Pressure: Diastolic blood pressure (mm Hg)
+* Skin Thickness: Triceps skin fold thickness (mm)
+* Insulin: 2-Hour serum insulin (mu U/ml)
+* BMI: Body mass index (weight in kg/(height in m)^2)
+* Diabetes Pedigree Function: Diabetes pedigree function
+* Age: Age (years)
 
 
 
-## :triangular_flag_on_post: Notebook
+## :rocket: Outputs
+The app will display one of the following messages:
 
-Checkout the notebook repository [`here`](https://github.com/Priyanshu88/Diabestes-Prediction-Streamlit-App).
+* "Congratulations! [Name], you are not diabetic."
+* "[Name], we are really sorry to say but it seems like you are Diabetic. But don't lose hope, we have suggestions for you." along with a link to the Mayo Clinic's Diabetes Prevention page.
+
+
+
+
+## :triangular_flag_on_post: Deployment and Notebook
+
+This tool has been deployed using [`Streamlit`](https://streamlit.io/). Learn about streamlit deployment [`here`](https://docs.streamlit.io/streamlit-community-cloud/get-started/deploy-an-app). Checkout the notebook repository [`here`](https://github.com/Priyanshu88/Diabestes-Prediction-Streamlit-App) from where the pickle file has been imployed in the tool.
 
 
 
