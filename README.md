@@ -72,22 +72,27 @@ The trained dataset is originally from the National Institute of Diabetes and Di
 
 ## :toolbox: Dependecies
 
-`streamlit`
+`streamlit==0.88.0`
 
-`pickle4`
+`pandas==1.3.3`
 
-`numpy==1.20.2`
+`numpy==1.21.2`
 
-`seaborn==0.11.1`
+`matplotlib==3.4.3`
 
-`scikit-learn>=0.18`
+`plotly==5.3.1`
 
-`matplotlib==3.4.1`
+`seaborn==0.11.2`
 
-`pandas==1.2.4`
+`scikit-learn==0.24.2`
 
-`plotly>=5.0.0`
+`joblib==1.1.0`
 
+`scipy==1.7.3`
+
+`torch==1.9.1`
+
+`torchvision==0.10.1`
 
 
 ## :gear: Installation
@@ -144,7 +149,7 @@ The app will display one of the following messages:
 
 ## :triangular_flag_on_post: Deployment and Notebook
 
-This tool has been deployed using [`Streamlit`](https://streamlit.io/). Learn about streamlit deployment [`here`](https://docs.streamlit.io/streamlit-community-cloud/get-started/deploy-an-app). Checkout the notebook repository [`here`](https://github.com/Priyanshu88/Diabestes-Prediction-Streamlit-App) from where the pickle file has been imployed in the tool.
+This tool has been deployed using [`Streamlit`](https://streamlit.io/). Learn about streamlit deployment [`here`](https://docs.streamlit.io/streamlit-community-cloud/get-started/deploy-an-app). Checkout the notebook repository [`here`](https://github.com/Priyanshu88/Diabestes-Prediction) from where the pickle file has been imployed in the tool.
 
 
 
